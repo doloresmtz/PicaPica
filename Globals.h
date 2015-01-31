@@ -11,6 +11,7 @@
 NSMutableArray *recordsArray;
 
 int record;
+int segs;
 
 @interface Globals : NSObject
 

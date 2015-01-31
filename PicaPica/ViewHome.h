@@ -12,7 +12,7 @@
 
 @property (strong, nonatomic) IBOutlet UILabel *lbSegs;
 @property (strong, nonatomic) IBOutlet UILabel *lbClics;
-
+@property (strong, nonatomic) NSTimer *timer;
 
 @end
 
