@@ -7,7 +7,7 @@
 //
 
 #import "ViewHome.h"
-
+#import "Globals.h"
 @interface ViewHome ()
 
 @end
@@ -22,6 +22,11 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+- (IBAction)puhs:(id)sender {
+    record++;
+    self.lbClics.text=[@(record) stringValue];
+    NSLog(@"push...");
 }
 
 @end

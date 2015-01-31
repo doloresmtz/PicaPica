@@ -10,6 +10,9 @@
 
 @interface ViewHome : UIViewController
 
+@property (strong, nonatomic) IBOutlet UILabel *lbSegs;
+@property (strong, nonatomic) IBOutlet UILabel *lbClics;
+
 
 @end
 

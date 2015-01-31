@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F83C21E91A7D51FC00FC02E2 /* Globals.m in Sources */ = {isa = PBXBuildFile; fileRef = F83C21E81A7D51FC00FC02E2 /* Globals.m */; };
 		F848A4A31A7D427000A07A75 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F848A4A21A7D427000A07A75 /* main.m */; };
 		F848A4A61A7D427000A07A75 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F848A4A51A7D427000A07A75 /* AppDelegate.m */; };
 		F848A4A91A7D427000A07A75 /* ViewHome.m in Sources */ = {isa = PBXBuildFile; fileRef = F848A4A81A7D427000A07A75 /* ViewHome.m */; };
@@ -29,6 +30,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F83C21E71A7D51FC00FC02E2 /* Globals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Globals.h; path = ../Globals.h; sourceTree = "<group>"; };
+		F83C21E81A7D51FC00FC02E2 /* Globals.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Globals.m; path = ../Globals.m; sourceTree = "<group>"; };
 		F848A49D1A7D427000A07A75 /* PicaPica.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PicaPica.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F848A4A11A7D427000A07A75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F848A4A21A7D427000A07A75 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -89,6 +92,8 @@
 				F848A4CB1A7D482F00A07A75 /* img */,
 				F848A4A41A7D427000A07A75 /* AppDelegate.h */,
 				F848A4A51A7D427000A07A75 /* AppDelegate.m */,
+				F83C21E71A7D51FC00FC02E2 /* Globals.h */,
+				F83C21E81A7D51FC00FC02E2 /* Globals.m */,
 				F848A4A71A7D427000A07A75 /* ViewHome.h */,
 				F848A4C61A7D47C500A07A75 /* ViewRanking.h */,
 				F848A4C71A7D47C500A07A75 /* ViewRanking.m */,
@@ -239,6 +244,7 @@
 				F848A4A91A7D427000A07A75 /* ViewHome.m in Sources */,
 				F848A4C81A7D47C500A07A75 /* ViewRanking.m in Sources */,
 				F848A4A61A7D427000A07A75 /* AppDelegate.m in Sources */,
+				F83C21E91A7D51FC00FC02E2 /* Globals.m in Sources */,
 				F848A4A31A7D427000A07A75 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -430,6 +436,7 @@
 				F848A4C21A7D427000A07A75 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F848A4C31A7D427000A07A75 /* Build configuration list for PBXNativeTarget "PicaPicaTests" */ = {
 			isa = XCConfigurationList;
@@ -438,6 +445,7 @@
 				F848A4C51A7D427000A07A75 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
