@@ -6,13 +6,13 @@
 //  Copyright (c) 2015 ConstruApps. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "ViewHome.h"
 
-@interface ViewController ()
+@interface ViewHome ()
 
 @end
 
-@implementation ViewController
+@implementation ViewHome
 
 - (void)viewDidLoad {
     [super viewDidLoad];

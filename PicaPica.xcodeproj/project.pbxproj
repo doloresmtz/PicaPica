@@ -9,11 +9,13 @@
 /* Begin PBXBuildFile section */
 		F848A4A31A7D427000A07A75 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F848A4A21A7D427000A07A75 /* main.m */; };
 		F848A4A61A7D427000A07A75 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F848A4A51A7D427000A07A75 /* AppDelegate.m */; };
-		F848A4A91A7D427000A07A75 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F848A4A81A7D427000A07A75 /* ViewController.m */; };
+		F848A4A91A7D427000A07A75 /* ViewHome.m in Sources */ = {isa = PBXBuildFile; fileRef = F848A4A81A7D427000A07A75 /* ViewHome.m */; };
 		F848A4AC1A7D427000A07A75 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F848A4AA1A7D427000A07A75 /* Main.storyboard */; };
 		F848A4AE1A7D427000A07A75 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F848A4AD1A7D427000A07A75 /* Images.xcassets */; };
 		F848A4B11A7D427000A07A75 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F848A4AF1A7D427000A07A75 /* LaunchScreen.xib */; };
 		F848A4BD1A7D427000A07A75 /* PicaPicaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F848A4BC1A7D427000A07A75 /* PicaPicaTests.m */; };
+		F848A4C81A7D47C500A07A75 /* ViewRanking.m in Sources */ = {isa = PBXBuildFile; fileRef = F848A4C71A7D47C500A07A75 /* ViewRanking.m */; };
+		F848A4CA1A7D482000A07A75 /* timer.png in Resources */ = {isa = PBXBuildFile; fileRef = F848A4C91A7D482000A07A75 /* timer.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +34,17 @@
 		F848A4A21A7D427000A07A75 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F848A4A41A7D427000A07A75 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F848A4A51A7D427000A07A75 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		F848A4A71A7D427000A07A75 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		F848A4A81A7D427000A07A75 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F848A4A71A7D427000A07A75 /* ViewHome.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewHome.h; sourceTree = "<group>"; };
+		F848A4A81A7D427000A07A75 /* ViewHome.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewHome.m; sourceTree = "<group>"; };
 		F848A4AB1A7D427000A07A75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F848A4AD1A7D427000A07A75 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F848A4B01A7D427000A07A75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		F848A4B61A7D427000A07A75 /* PicaPicaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PicaPicaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F848A4BB1A7D427000A07A75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F848A4BC1A7D427000A07A75 /* PicaPicaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PicaPicaTests.m; sourceTree = "<group>"; };
+		F848A4C61A7D47C500A07A75 /* ViewRanking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewRanking.h; path = ../ViewRanking.h; sourceTree = "<group>"; };
+		F848A4C71A7D47C500A07A75 /* ViewRanking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewRanking.m; path = ../ViewRanking.m; sourceTree = "<group>"; };
+		F848A4C91A7D482000A07A75 /* timer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = timer.png; path = ../timer.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,10 +86,13 @@
 		F848A49F1A7D427000A07A75 /* PicaPica */ = {
 			isa = PBXGroup;
 			children = (
+				F848A4CB1A7D482F00A07A75 /* img */,
 				F848A4A41A7D427000A07A75 /* AppDelegate.h */,
 				F848A4A51A7D427000A07A75 /* AppDelegate.m */,
-				F848A4A71A7D427000A07A75 /* ViewController.h */,
-				F848A4A81A7D427000A07A75 /* ViewController.m */,
+				F848A4A71A7D427000A07A75 /* ViewHome.h */,
+				F848A4C61A7D47C500A07A75 /* ViewRanking.h */,
+				F848A4C71A7D47C500A07A75 /* ViewRanking.m */,
+				F848A4A81A7D427000A07A75 /* ViewHome.m */,
 				F848A4AA1A7D427000A07A75 /* Main.storyboard */,
 				F848A4AD1A7D427000A07A75 /* Images.xcassets */,
 				F848A4AF1A7D427000A07A75 /* LaunchScreen.xib */,
@@ -117,6 +125,14 @@
 				F848A4BB1A7D427000A07A75 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F848A4CB1A7D482F00A07A75 /* img */ = {
+			isa = PBXGroup;
+			children = (
+				F848A4C91A7D482000A07A75 /* timer.png */,
+			);
+			name = img;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,6 +216,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F848A4AC1A7D427000A07A75 /* Main.storyboard in Resources */,
+				F848A4CA1A7D482000A07A75 /* timer.png in Resources */,
 				F848A4B11A7D427000A07A75 /* LaunchScreen.xib in Resources */,
 				F848A4AE1A7D427000A07A75 /* Images.xcassets in Resources */,
 			);
@@ -219,7 +236,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F848A4A91A7D427000A07A75 /* ViewController.m in Sources */,
+				F848A4A91A7D427000A07A75 /* ViewHome.m in Sources */,
+				F848A4C81A7D47C500A07A75 /* ViewRanking.m in Sources */,
 				F848A4A61A7D427000A07A75 /* AppDelegate.m in Sources */,
 				F848A4A31A7D427000A07A75 /* main.m in Sources */,
 			);
