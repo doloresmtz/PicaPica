@@ -43,6 +43,12 @@
        NSLog(@"Tiempo terminado...");
         [self.timer invalidate];
         self.timer = nil;
+        self.cmdPicale.enabled=false;
+        
+        
+        [self.cmdPicale setTitle:@"Tiempo agotado..." forState:UIControlStateNormal];
+        [self performSegueWithIdentifier:@"SegueToRanking" sender:self];
+
     }
 }
 
@@ -55,9 +61,9 @@
     [self startTimer];
      self.lbJugar.hidden=true;
      self.cmdJugar.hidden=true;
-    self.lbPicale.hidden=false;
-    self.cmdPicale.hidden=false;
-    self.cmdPicale.enabled=false;
+     self.lbPicale.hidden=false;
+     self.cmdPicale.hidden=false;
+   
     
 }
 
