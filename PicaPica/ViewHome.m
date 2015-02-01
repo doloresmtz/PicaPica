@@ -18,7 +18,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view,
-    [self startTimer];
+    self.lbPicale.hidden=true;
+    self.cmdPicale.hidden=true;
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -36,14 +38,27 @@
 
 - (void)counter:(NSTimer *)timer {
     segs++;
-    self.lbSegs.text=[@(segs) stringValue];
-    NSLog(@"segs...");
+    self.lbSegundos.text=[@(segs) stringValue];
+    if( segs>9) {
+       NSLog(@"Tiempo terminado...");
+        [self.timer invalidate];
+        self.timer = nil;
+    }
 }
 
 - (IBAction)puhs:(id)sender {
     record++;
     self.lbClics.text=[@(record) stringValue];
     NSLog(@"push...");
+}
+- (IBAction)jugar:(id)sender {
+    [self startTimer];
+     self.lbJugar.hidden=true;
+     self.cmdJugar.hidden=true;
+    self.lbPicale.hidden=false;
+    self.cmdPicale.hidden=false;
+    self.cmdPicale.enabled=false;
+    
 }
 
 

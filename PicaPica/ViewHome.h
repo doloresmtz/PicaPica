@@ -10,9 +10,14 @@
 
 @interface ViewHome : UIViewController
 
-@property (strong, nonatomic) IBOutlet UILabel *lbSegs;
-@property (strong, nonatomic) IBOutlet UILabel *lbClics;
 @property (strong, nonatomic) NSTimer *timer;
+@property (strong, nonatomic) IBOutlet UIButton *cmdJugar;
+@property (strong, nonatomic) IBOutlet UIButton *cmdPicale;
+@property (strong, nonatomic) IBOutlet UILabel *lbJugar;
+@property (strong, nonatomic) IBOutlet UILabel *lbPicale;
+@property (strong, nonatomic) IBOutlet UILabel *lbClics;
+@property (strong, nonatomic) IBOutlet UILabel *lbSegundos;
+@property (strong, nonatomic) IBOutlet UITextField *txtJugador;
 
 @end
 
