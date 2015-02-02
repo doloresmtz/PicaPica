@@ -15,6 +15,7 @@ int segs;
 NSString *jugador;
 
 NSMutableArray *jugadorArray;
+NSMutableArray *jugadorArrayOrd;
 
 @interface Globals : NSObject
 

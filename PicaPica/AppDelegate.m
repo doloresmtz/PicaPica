@@ -21,6 +21,7 @@
     segs=0;
     
     jugadorArray = [[NSMutableArray alloc] initWithCapacity:40];
+    jugadorArrayOrd = [[NSMutableArray alloc] initWithCapacity:40];
     return YES;
 }
 

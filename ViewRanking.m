@@ -64,13 +64,18 @@
 */
 
 - (void)ordenarRanking {
+    //Se ordena ascendente
     NSSortDescriptor *sort = [NSSortDescriptor sortDescriptorWithKey:@"score" ascending:YES];
     [jugadorArray sortUsingDescriptors:[NSArray arrayWithObject:sort]];
     
+    //Se copia a un arreglo de forma descentente
     NSString *res;
-    for (int i = 0 ; i < jugadorArray.count; i++) {
+    int c=0;
+    for (int i = jugadorArray.count-1 ; i>=0; i--) {
         Jugador *jug = [jugadorArray objectAtIndex:i];
-        jug.ranking=i+1;
+        jug.ranking=c+1;
+        [jugadorArrayOrd addObject:jug];
+        c++;
         res=@"";
         res = [NSString stringWithFormat:@"%@ %d %d", jug.name, jug.score,jug.ranking];
         NSLog(@"%@",res);

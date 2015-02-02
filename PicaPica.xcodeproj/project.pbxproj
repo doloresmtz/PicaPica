@@ -92,12 +92,11 @@
 		F848A49F1A7D427000A07A75 /* PicaPica */ = {
 			isa = PBXGroup;
 			children = (
+				F8A567E31A7F302000B14EB3 /* Clases */,
 				F8A567E21A7F0FA700B14EB3 /* Objetos */,
-				F848A4CB1A7D482F00A07A75 /* img */,
+				F848A4CB1A7D482F00A07A75 /* Images */,
 				F848A4A41A7D427000A07A75 /* AppDelegate.h */,
 				F848A4A51A7D427000A07A75 /* AppDelegate.m */,
-				F83C21E71A7D51FC00FC02E2 /* Globals.h */,
-				F83C21E81A7D51FC00FC02E2 /* Globals.m */,
 				F848A4A71A7D427000A07A75 /* ViewHome.h */,
 				F848A4C61A7D47C500A07A75 /* ViewRanking.h */,
 				F848A4C71A7D47C500A07A75 /* ViewRanking.m */,
@@ -136,12 +135,12 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		F848A4CB1A7D482F00A07A75 /* img */ = {
+		F848A4CB1A7D482F00A07A75 /* Images */ = {
 			isa = PBXGroup;
 			children = (
 				F848A4C91A7D482000A07A75 /* timer.png */,
 			);
-			name = img;
+			name = Images;
 			sourceTree = "<group>";
 		};
 		F8A567E21A7F0FA700B14EB3 /* Objetos */ = {
@@ -151,6 +150,15 @@
 				F8A567E01A7F0F9700B14EB3 /* Jugador.m */,
 			);
 			name = Objetos;
+			sourceTree = "<group>";
+		};
+		F8A567E31A7F302000B14EB3 /* Clases */ = {
+			isa = PBXGroup;
+			children = (
+				F83C21E71A7D51FC00FC02E2 /* Globals.h */,
+				F83C21E81A7D51FC00FC02E2 /* Globals.m */,
+			);
+			name = Clases;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

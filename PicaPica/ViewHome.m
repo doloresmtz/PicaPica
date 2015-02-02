@@ -43,7 +43,7 @@ UIAlertView     *alert;
     segs++;
     self.lbSegundos.text=[@(segs) stringValue];
     if( segs>9) {
-       NSLog(@"Tiempo terminado...");
+       //NSLog(@"Tiempo terminado...");
         [self.timer invalidate];
         self.timer = nil;
         self.cmdPicale.enabled=false;
