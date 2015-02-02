@@ -70,22 +70,24 @@
     NSString *res;
     for (int i = 0 ; i < jugadorArray.count; i++) {
         Jugador *jug = [jugadorArray objectAtIndex:i];
-        jug.ranking=i;
+        jug.ranking=i+1;
         res=@"";
-        res = [NSString stringWithFormat:@"%@ %d", jug.name, jug.score];
+        res = [NSString stringWithFormat:@"%@ %d %d", jug.name, jug.score,jug.ranking];
         NSLog(@"%@",res);
     }
 }
 
 - (int)getRankin:(NSString *)name {
     int rank=0;
+    //NSLog(@"%@ %@",@"Buscar:",name);
     //Buscamos la puntuacion del jugador
     for (int i = 0 ; i < jugadorArray.count; i++) {
         Jugador *jug = [jugadorArray objectAtIndex:i];
-        if(jug.name==name){
+        if([jug.name isEqualToString:name]){
             //NSLog(@"%@",[@(jug.score) stringValue]);
             //NSLog(@"%ld",(long)jug.score);
             //NSLog(@"%d",(int)jug.score);
+            //NSLog(@"%@ %d %d", jug.name, jug.score, jug.ranking);
             rank=jug.ranking;
             i=jugadorArray.count;
         }

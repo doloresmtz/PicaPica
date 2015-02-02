@@ -66,7 +66,7 @@ UIAlertView     *alert;
 - (IBAction)puhs:(id)sender {
     record++;
     self.lbClics.text=[@(record) stringValue];
-    NSLog(@"push...");
+    //NSLog(@"push...");
 }
 - (IBAction)jugar:(id)sender {
     if ([self.txtJugador.text isEqual:@""]){
