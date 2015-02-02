@@ -69,6 +69,11 @@ UIAlertView     *alert;
     //NSLog(@"push...");
 }
 - (IBAction)jugar:(id)sender {
+    
+    [jugadorArrayOrd removeAllObjects];
+    segs=0;
+    record=0;
+    
     if ([self.txtJugador.text isEqual:@""]){
         NSLog(@"No name");
         alert = [[UIAlertView alloc] initWithTitle:@"PicaPica"

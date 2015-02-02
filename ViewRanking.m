@@ -106,4 +106,7 @@
     [self performSegueWithIdentifier:@"SegueToHome" sender:self];
 }
 
+- (IBAction)ranking:(id)sender {
+}
+
 @end
