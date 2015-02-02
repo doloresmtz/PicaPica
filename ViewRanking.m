@@ -7,6 +7,7 @@
 //
 
 #import "ViewRanking.h"
+#import "Globals.h"
 
 @interface ViewRanking ()
 
@@ -33,5 +34,10 @@
     // Pass the selected object to the new view controller.
 }
 */
+- (IBAction)back:(id)sender {
+    segs=0;
+    record=0;
+    [self performSegueWithIdentifier:@"SegueToHome" sender:self];
+}
 
 @end

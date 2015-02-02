@@ -172,6 +172,9 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="back:" destination="dBn-an-lNb" eventType="touchUpInside" id="wHC-EH-dQj"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -179,6 +182,11 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="568"/>
                     <connections>
+                        <outlet property="cmdRegresar" destination="5ih-Mq-sM0" id="Nqd-sd-xf8"/>
+                        <outlet property="lbClics" destination="yH3-D9-TyG" id="P55-Us-P0v"/>
+                        <outlet property="lbFecha" destination="vEH-bF-1KW" id="7Mi-P8-mnn"/>
+                        <outlet property="lbHora" destination="0Ik-0u-UX6" id="huD-6M-M2t"/>
+                        <outlet property="lbRanking" destination="d1p-dl-gnH" id="nBt-j3-F2z"/>
                         <segue destination="vXZ-lx-hvc" kind="custom" identifier="SegueToHome" id="2zl-4Z-bE7"/>
                     </connections>
                 </viewController>

@@ -58,13 +58,17 @@
     NSLog(@"push...");
 }
 - (IBAction)jugar:(id)sender {
+    if ([self.txtJugador.text isEqual:@""]){
+        NSLog(@"No name");
+    }
+    else{
     [self startTimer];
      self.lbJugar.hidden=true;
      self.cmdJugar.hidden=true;
      self.lbPicale.hidden=false;
      self.cmdPicale.hidden=false;
    
-    
+    }
 }
 
 
