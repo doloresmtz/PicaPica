@@ -9,6 +9,8 @@
 #import "ViewRanking.h"
 #import "Globals.h"
 
+
+
 @interface ViewRanking ()
 
 @end
@@ -18,8 +20,26 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    //Obtener la fecha
+    NSDate *today = [NSDate date];
+    NSDateFormatter *dateFormat = [[NSDateFormatter alloc] init];
+    [dateFormat setDateFormat:@"dd/MM/yyyy"];
+    NSString *dateString = [dateFormat stringFromDate:today];
+    
+    //Obtener la hora
+    
+    NSDate *currentTime = [NSDate date];
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateFormat:@"hh-mm"];
+    NSString *horaString = [dateFormatter stringFromDate: currentTime];
+    
+    
     self.lbJugador.text=jugador;
     self.lbClics.text=[@(record) stringValue];
+    self.lbFecha.text = dateString;
+    self.lbHora.text=horaString;
+    
 }
 
 - (void)didReceiveMemoryWarning {
