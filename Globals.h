@@ -14,6 +14,8 @@ int record;
 int segs;
 NSString *jugador;
 
+NSMutableArray *jugadorArray;
+
 @interface Globals : NSObject
 
 

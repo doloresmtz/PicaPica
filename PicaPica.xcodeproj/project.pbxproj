@@ -17,6 +17,7 @@
 		F848A4BD1A7D427000A07A75 /* PicaPicaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F848A4BC1A7D427000A07A75 /* PicaPicaTests.m */; };
 		F848A4C81A7D47C500A07A75 /* ViewRanking.m in Sources */ = {isa = PBXBuildFile; fileRef = F848A4C71A7D47C500A07A75 /* ViewRanking.m */; };
 		F848A4CA1A7D482000A07A75 /* timer.png in Resources */ = {isa = PBXBuildFile; fileRef = F848A4C91A7D482000A07A75 /* timer.png */; };
+		F8A567E11A7F0F9700B14EB3 /* Jugador.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A567E01A7F0F9700B14EB3 /* Jugador.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,8 @@
 		F848A4C61A7D47C500A07A75 /* ViewRanking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewRanking.h; path = ../ViewRanking.h; sourceTree = "<group>"; };
 		F848A4C71A7D47C500A07A75 /* ViewRanking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewRanking.m; path = ../ViewRanking.m; sourceTree = "<group>"; };
 		F848A4C91A7D482000A07A75 /* timer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = timer.png; path = ../timer.png; sourceTree = "<group>"; };
+		F8A567DF1A7F0F9700B14EB3 /* Jugador.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Jugador.h; path = ../Jugador.h; sourceTree = "<group>"; };
+		F8A567E01A7F0F9700B14EB3 /* Jugador.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Jugador.m; path = ../Jugador.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +92,7 @@
 		F848A49F1A7D427000A07A75 /* PicaPica */ = {
 			isa = PBXGroup;
 			children = (
+				F8A567E21A7F0FA700B14EB3 /* Objetos */,
 				F848A4CB1A7D482F00A07A75 /* img */,
 				F848A4A41A7D427000A07A75 /* AppDelegate.h */,
 				F848A4A51A7D427000A07A75 /* AppDelegate.m */,
@@ -138,6 +142,15 @@
 				F848A4C91A7D482000A07A75 /* timer.png */,
 			);
 			name = img;
+			sourceTree = "<group>";
+		};
+		F8A567E21A7F0FA700B14EB3 /* Objetos */ = {
+			isa = PBXGroup;
+			children = (
+				F8A567DF1A7F0F9700B14EB3 /* Jugador.h */,
+				F8A567E01A7F0F9700B14EB3 /* Jugador.m */,
+			);
+			name = Objetos;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -246,6 +259,7 @@
 				F848A4C81A7D47C500A07A75 /* ViewRanking.m in Sources */,
 				F848A4A61A7D427000A07A75 /* AppDelegate.m in Sources */,
 				F83C21E91A7D51FC00FC02E2 /* Globals.m in Sources */,
+				F8A567E11A7F0F9700B14EB3 /* Jugador.m in Sources */,
 				F848A4A31A7D427000A07A75 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

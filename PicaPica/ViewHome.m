@@ -8,6 +8,7 @@
 
 #import "ViewHome.h"
 #import "Globals.h"
+#import "Jugador.h"
 
 UIAlertView     *alert;
 @interface ViewHome ()
@@ -49,6 +50,14 @@ UIAlertView     *alert;
         
         
         [self.cmdPicale setTitle:@"Tiempo agotado..." forState:UIControlStateNormal];
+        
+        //Se agrega el objeto al  array
+        Jugador *jug = [[Jugador alloc] init];
+        jug.name = self.txtJugador.text;
+        jug.score = record;
+        
+        [jugadorArray addObject:jug];
+        
         [self performSegueWithIdentifier:@"SegueToRanking" sender:self];
 
     }

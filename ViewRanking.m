@@ -8,6 +8,7 @@
 
 #import "ViewRanking.h"
 #import "Globals.h"
+#import "Jugador.h"
 
 
 
@@ -31,7 +32,7 @@
     
     NSDate *currentTime = [NSDate date];
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-    [dateFormatter setDateFormat:@"hh-mm"];
+    [dateFormatter setDateFormat:@"hh:mm"];
     NSString *horaString = [dateFormatter stringFromDate: currentTime];
     
     
@@ -40,6 +41,11 @@
     self.lbFecha.text = dateString;
     self.lbHora.text=horaString;
     
+    [self ordenarRanking];
+    //Mostramos el rankin
+    int rank=[self getRankin:self.lbJugador.text];
+    self.lbRanking.text=[@(rank) stringValue];
+
 }
 
 - (void)didReceiveMemoryWarning {
@@ -56,6 +62,37 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+- (void)ordenarRanking {
+    NSSortDescriptor *sort = [NSSortDescriptor sortDescriptorWithKey:@"score" ascending:YES];
+    [jugadorArray sortUsingDescriptors:[NSArray arrayWithObject:sort]];
+    
+    NSString *res;
+    for (int i = 0 ; i < jugadorArray.count; i++) {
+        Jugador *jug = [jugadorArray objectAtIndex:i];
+        jug.ranking=i;
+        res=@"";
+        res = [NSString stringWithFormat:@"%@ %d", jug.name, jug.score];
+        NSLog(@"%@",res);
+    }
+}
+
+- (int)getRankin:(NSString *)name {
+    int rank=0;
+    //Buscamos la puntuacion del jugador
+    for (int i = 0 ; i < jugadorArray.count; i++) {
+        Jugador *jug = [jugadorArray objectAtIndex:i];
+        if(jug.name==name){
+            //NSLog(@"%@",[@(jug.score) stringValue]);
+            //NSLog(@"%ld",(long)jug.score);
+            //NSLog(@"%d",(int)jug.score);
+            rank=jug.ranking;
+            i=jugadorArray.count;
+        }
+    }
+    return rank;
+}
+
 - (IBAction)back:(id)sender {
     segs=0;
     record=0;

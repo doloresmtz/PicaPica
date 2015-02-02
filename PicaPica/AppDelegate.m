@@ -19,6 +19,8 @@
     // Override point for customization after application launch.
     record=0;
     segs=0;
+    
+    jugadorArray = [[NSMutableArray alloc] initWithCapacity:40];
     return YES;
 }
 
