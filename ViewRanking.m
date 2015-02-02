@@ -18,6 +18,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.lbJugador.text=jugador;
+    self.lbClics.text=[@(record) stringValue];
 }
 
 - (void)didReceiveMemoryWarning {

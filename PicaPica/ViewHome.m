@@ -8,6 +8,8 @@
 
 #import "ViewHome.h"
 #import "Globals.h"
+
+UIAlertView     *alert;
 @interface ViewHome ()
 
 @end
@@ -60,9 +62,18 @@
 - (IBAction)jugar:(id)sender {
     if ([self.txtJugador.text isEqual:@""]){
         NSLog(@"No name");
+        alert = [[UIAlertView alloc] initWithTitle:@"PicaPica"
+                                           message:@"Escriba el nombre del jugador!"
+                                          delegate:self
+                                 cancelButtonTitle:@"Aceptar"
+                                 otherButtonTitles:nil, nil, nil];
+        [alert show];
+
     }
     else{
-    [self startTimer];
+        jugador=self.txtJugador.text;
+        self.txtJugador.enabled=false;
+     [self startTimer];
      self.lbJugar.hidden=true;
      self.cmdJugar.hidden=true;
      self.lbPicale.hidden=false;

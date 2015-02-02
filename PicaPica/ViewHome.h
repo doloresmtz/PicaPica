@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewHome : UIViewController
+@interface ViewHome : UIViewController< UIAlertViewDelegate>
 
 @property (strong, nonatomic) NSTimer *timer;
 @property (strong, nonatomic) IBOutlet UIButton *cmdJugar;

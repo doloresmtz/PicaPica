@@ -14,5 +14,6 @@
 @property (strong, nonatomic) IBOutlet UILabel *lbFecha;
 @property (strong, nonatomic) IBOutlet UILabel *lbHora;
 @property (strong, nonatomic) IBOutlet UIButton *cmdRegresar;
+@property (strong, nonatomic) IBOutlet UILabel *lbJugador;
 
 @end
