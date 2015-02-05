@@ -20,6 +20,8 @@ UIAlertView     *alert;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+     self.txtJugador.delegate = self;
     // Do any additional setup after loading the view,
     self.lbPicale.hidden=true;
     self.cmdPicale.hidden=true;
@@ -29,6 +31,11 @@ UIAlertView     *alert;
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    [textField resignFirstResponder];
+    return NO;
 }
 
 - (void)startTimer {
