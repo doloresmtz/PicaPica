@@ -94,12 +94,12 @@
                         <outlet property="lbPicale" destination="nYa-Nt-WZw" id="rQS-UC-OZS"/>
                         <outlet property="lbSegundos" destination="avJ-8L-cjn" id="X9r-VP-epF"/>
                         <outlet property="txtJugador" destination="HRT-Eq-JCO" id="PKd-ax-nHv"/>
-                        <segue destination="dBn-an-lNb" kind="custom" identifier="SegueToRanking" id="AhS-78-W0W"/>
+                        <segue destination="dBn-an-lNb" kind="modal" identifier="SegueToRanking" id="AhS-78-W0W"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="79" y="308"/>
+            <point key="canvasLocation" x="149" y="282"/>
         </scene>
         <!--ViewRanking-->
         <scene sceneID="MX1-Zt-Euo">
@@ -208,7 +208,7 @@
                                 </state>
                                 <connections>
                                     <action selector="ranking:" destination="dBn-an-lNb" eventType="touchUpInside" id="TjI-Co-e6L"/>
-                                    <segue destination="W4Q-V8-JJm" kind="show" id="wVr-6N-G3s"/>
+                                    <segue destination="W4Q-V8-JJm" kind="modal" identifier="SegueToList" id="wVr-6N-G3s"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -223,7 +223,7 @@
                         <outlet property="lbHora" destination="0Ik-0u-UX6" id="huD-6M-M2t"/>
                         <outlet property="lbJugador" destination="hWU-y3-WQG" id="8G9-ce-s3e"/>
                         <outlet property="lbRanking" destination="d1p-dl-gnH" id="nBt-j3-F2z"/>
-                        <segue destination="vXZ-lx-hvc" kind="custom" identifier="SegueToHome" id="2zl-4Z-bE7"/>
+                        <segue destination="vXZ-lx-hvc" kind="modal" identifier="SegueToHome" id="2zl-4Z-bE7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K81-Kn-9VQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -249,27 +249,8 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nir-a0-olV">
-                                <rect key="frame" x="60" y="491" width="200" height="41"/>
-                                <color key="backgroundColor" red="0.59999999999999998" green="0.80000000000000004" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BT5-y3-oGc" userLabel="cmdRegresar">
-                                <rect key="frame" x="60" y="491" width="200" height="41"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
-                                <state key="normal" title="Volver a Jugar">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="back:" destination="dBn-an-lNb" eventType="touchUpInside" id="Cas-ah-JYp"/>
-                                    <segue destination="vXZ-lx-hvc" kind="show" id="vTA-7J-mc2"/>
-                                </connections>
-                            </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="47" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="O0A-4A-gSJ" userLabel="tblMain">
-                                <rect key="frame" x="5" y="57" width="310" height="402"/>
+                                <rect key="frame" x="5" y="57" width="310" height="307"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellRanking" rowHeight="47" id="gnP-Mj-aiu" userLabel="cell" customClass="cellRanking">
@@ -316,6 +297,25 @@
                                     <outlet property="delegate" destination="W4Q-V8-JJm" id="WaM-6G-sfg"/>
                                 </connections>
                             </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nir-a0-olV">
+                                <rect key="frame" x="68" y="385" width="200" height="41"/>
+                                <color key="backgroundColor" red="0.59999999999999998" green="0.80000000000000004" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BT5-y3-oGc" userLabel="cmdRegresar">
+                                <rect key="frame" x="68" y="385" width="200" height="41"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <state key="normal" title="Volver a Jugar">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="back:" destination="dBn-an-lNb" eventType="touchUpInside" id="Cas-ah-JYp"/>
+                                    <segue destination="vXZ-lx-hvc" kind="modal" identifier="SegueToHome" id="vTA-7J-mc2"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -327,7 +327,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="74Y-mn-DOB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="967" y="353"/>
+            <point key="canvasLocation" x="938" y="282"/>
         </scene>
     </scenes>
     <resources>
